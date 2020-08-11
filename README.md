@@ -1,3 +1,3 @@
-# Department-management-system
+# Department_management_system
   It contains a project of department management system using html5,CSS,php and javascript.You will see four modules on the homepage : Student,faculty,Admin,Events,Both the student and faculty modules have login and register pages for their corresponding tasks.Students,faculties can view the timetable updates,academic calender and information about faculties.All the rights for creation,updation and deletion of any student/faculty record are reserved to admins only.And the last module events, has the information,photographs and videos about various cultural,technical and non-technical events in the department.
  
