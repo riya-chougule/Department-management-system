@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Student Details</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style align="left">footer {
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+ }
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="file:///C:/Users/Admin/Desktop/Project/timetable.html" class="w3-bar-item w3-button w3-padding-large">Timetable</a>
+    <a href="file:///C:/Users/Admin/Desktop/Project/acad_plan.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Academic planner</a>
+    <a href="file:///C:/Users/Admin/Desktop/Project/events.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Events</a>
+    <a href="file:///C:/Users/Admin/Desktop/Project/it_fac.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Faculty information</a>
+    
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="mmcoe.png" style="width:70%" >
+ </div>    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-22 w3-hide-small">
+     <h1><b>MMCOE welcomes you</b></h1>
+      <h4>Be a part of MMCOEians</h4>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="hostel.png" style="width:70%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-22 w3-hide-small">
+<h1><b>MMCOE welcomes you</b></h1>
+      <h4>Be a part of MMCOEians</h4>   
+    </div>
+   </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide"><b><u>MMCOE</u></b></h2>
+      <p class="w3-justify"><h4>Marathwada Mitra Mandal's College of Engineering (MMCOE) is an Engineering College located in Pune, Maharashtra. The college offers Bachelors in Engineering in the branch of Computer, Electrical, Electronics and Telecommunication, Information Technology and Mechanical Engineering. The college also provides Bachelors in Business Management.</h4></p>
+    <p><h4>MMCOE is affiliated to S.P. Pune University,and recognized by DTE Maharashtra and approved by AICTE New Delhi.It is recently acredited by 'A' grade by the NAAC.The trust had started its activity with the objective of providing hostel or similar accommodation in Pune to the students. This trust is established through the inspiration of socially and educationally charged personalities, with motto "Yethe Bahutanche Hit" (Welfare of Masses). Mass education, co-education and dedication towards overall development of the region are watchwords of the trust. At its various educational campuses the trust has created excellent facilities of education catering to Architecture, Interior Design, Management, Law, Commerce, Pharmacy, Engineering, etc, which provide excellent education to about 12,000 students.</h4></p><br><br>
+   
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Team Abhedya</p>
+        <img src="abhedya.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:70%">
+      </div>
+      <div class="w3-third">
+        <p>Dextirity</p>
+        <img src="dex.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:70%">
+      </div>
+      <div class="w3-third">
+        <p>NCC</p>
+        <img src="ncc.jpg" class="w3-round" alt="Random Name" style="width:70%">
+      </div>
+    </div>  
+<br><br><br><br><br><br>
+
+<!-- Footer -->
+<footer>
+    Copyright © MMCOE 2019. All rights reserved.
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() 
+    {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</html>
